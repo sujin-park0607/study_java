@@ -1,0 +1,24 @@
+package java_hello;
+import java.util.Scanner;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		int num1 = 5;
+		int num2 = 7;
+		int i = 1; 
+		int result_num = 0;
+		
+		while(i <= 100){
+			i ++;
+			
+			if(i % num1 ==0 && i % num2 ==0 ) {
+				result_num ++;
+				continue;
+			}
+			
+		}
+		
+	}
+
+}

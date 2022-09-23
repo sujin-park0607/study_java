@@ -1,0 +1,10 @@
+
+
+//default상태
+class SCar {
+	SCar() {
+		System.out.println("삼성차 생성자");
+	}
+}
+
+

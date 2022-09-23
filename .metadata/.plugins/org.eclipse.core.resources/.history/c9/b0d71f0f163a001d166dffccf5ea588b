@@ -1,0 +1,19 @@
+package java_hello;
+import java.util.*;
+public class RockScissorsPaper {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("가위(0) 바위(1) 보(2)");
+		int userInput = sc.nextInt();
+		
+		final int computerInput = (int)(Math.random() * 3);
+		System.out.println(computerInput);
+		
+		
+		
+
+	}
+
+}

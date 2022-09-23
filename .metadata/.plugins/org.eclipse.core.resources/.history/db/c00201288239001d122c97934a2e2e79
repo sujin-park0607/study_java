@@ -1,0 +1,10 @@
+package java_hello;
+
+public class Rotto {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

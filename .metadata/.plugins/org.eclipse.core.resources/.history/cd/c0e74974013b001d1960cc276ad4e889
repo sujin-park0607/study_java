@@ -1,0 +1,12 @@
+import edu.lion.car.HCar;
+
+public class JvmTest {
+
+	public static void main(String[] args) {
+		
+		HCar hcar = new HCar();
+		SCar scar = new SCar();
+
+	}
+
+}

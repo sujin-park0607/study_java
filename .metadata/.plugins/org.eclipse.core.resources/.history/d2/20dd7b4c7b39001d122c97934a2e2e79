@@ -1,0 +1,39 @@
+package java_hello;
+
+import java.util.Scanner;
+
+import java.util.Scanner;
+
+public class Star {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("숫자를 입력하시오: ");
+		int num = sc.nextInt();
+		
+		
+		int odd = 1;
+		int midNum = (num/2);
+		System.out.println(midNum);
+		
+		for (int i=1; i <= num; i++) {
+					
+			for (int j=midNum; j > 0; j--) {
+				System.out.print(" ");
+			}
+			
+			for (int k=0; k <= odd; k++) {
+				System.out.print("*");
+				odd += 2;
+			}
+			
+			for (int j=midNum; j > 0; j--) {
+				System.out.print(" ");
+			}
+			
+			System.out.println();
+		}
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package edu.lion.car;
+
+public class Circle {
+	int time;
+	
+	public Circle() {
+		
+	}
+}
+

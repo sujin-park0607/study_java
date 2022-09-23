@@ -1,0 +1,20 @@
+import edu.lion.car.HCar;
+import edu.lion.car.SCar;
+
+public class JvmTest {
+
+	public static void main(String[] args) {
+		
+		HCar hcar = new HCar();
+		SCar scar = new SCar();
+		
+		System.out.println(scar.year); //
+		System.out.println(scar.year2);
+		
+		scar.year = 9000;
+		
+		System.out.println(scar.year);
+
+	}
+
+}

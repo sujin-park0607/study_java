@@ -1,0 +1,16 @@
+class StudentInfo{
+	String name;
+	int number;
+	int age;
+	
+}
+
+
+public class Student {
+
+	public static void main(String[] args) {
+		st
+
+	}
+
+}

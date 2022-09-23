@@ -1,0 +1,10 @@
+package edu.lion.car;
+
+public class Clock {
+	int time;
+	
+	public Clock() {
+		
+	}
+}
+

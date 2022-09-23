@@ -1,0 +1,16 @@
+package edu.lion.car;
+
+
+//default惑怕
+public class SCar {
+	
+	private String name = "伙己";
+	public int year = 2000;
+	public int year2 = 2000;
+	
+	public SCar() {
+		System.out.println(year + "伙己瞒 积己磊");
+	}
+}
+
+

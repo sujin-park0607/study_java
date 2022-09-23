@@ -1,0 +1,8 @@
+package edu.lion.car;
+
+class SCar {
+	SCar() {
+		System.out.println("삼성차 생성자");
+	}
+}
+

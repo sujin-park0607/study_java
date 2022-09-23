@@ -1,0 +1,10 @@
+package edu.lion.car;
+
+//default상태
+public class SCar {
+	public SCar() {
+		System.out.println("삼성차 생성자");
+	}
+}
+
+

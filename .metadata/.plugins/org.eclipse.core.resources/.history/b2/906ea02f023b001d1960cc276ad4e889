@@ -1,0 +1,14 @@
+
+
+//default惑怕
+class SCar {
+	
+	private String name = "伙己";
+	private int year = 2000;
+	
+	SCar() {
+		System.out.println("伙己瞒 积己磊");
+	}
+}
+
+
