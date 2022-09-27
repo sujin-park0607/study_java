@@ -1,0 +1,27 @@
+package java_0923;
+
+class Shape{
+	public void draw() {
+		System.out.println("도형을 그립니다. ");
+	}
+}
+
+class Rectangle extends Shape{
+	
+	public void draw() {
+		System.out.println("사각형을 그립니다.");
+	}
+}
+
+
+
+public class OverTest {
+
+	public static void main(String[] args) {
+		
+		Shape shape = new Shape();
+		shape.draw();
+
+	}
+
+}

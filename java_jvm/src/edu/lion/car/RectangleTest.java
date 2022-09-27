@@ -24,7 +24,7 @@ class Rectangle{
 	}
 	
 	public boolean contains(Rectangle r) {
-		if( x <= r.x && y <= r.y && (x+width) >= (r.x + r.width) && (y + height) >= (r.y + r.height) ) {
+		if( x < r.x && y < r.y && (x+width) > (r.x + r.width) && (y + height) > (r.y + r.height) ) {
 			return true;
 		}
 		else {

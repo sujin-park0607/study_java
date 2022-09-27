@@ -1,0 +1,85 @@
+package java_0923;
+
+class Shape{
+	protected int width;
+	protected int height;
+
+	public Shape() {	
+	}
+	
+	public Shape(int width, int height) {
+		this.width = width;
+		this.height = height;
+	}
+	
+
+	public void draw() {
+		System.out.println("도형입니다. ");
+	}
+	
+	public double getArea() {
+		return 0;
+	}
+}
+
+class Rectangle extends Shape{
+	public Rectangle() {
+	}
+	
+	public Rectangle(int width, int height) {
+		super(width, height);
+	}
+	
+	@Override
+	public double getArea() {
+		return this.width * this.height;
+	}
+}
+
+
+class Triangle extends Shape{
+	public Triangle(){
+	}
+	
+	public Triangle(int width, int height) {
+		super(width, height);
+	}
+	
+	@Override
+	public double getArea() {
+		return (super.width * super.height)/2.0;
+	}
+}
+
+
+class Circle extends Shape{
+	private double radius;
+
+	public Circle() {
+	}
+	
+	public Circle(double radius) {
+		this.radius = radius;
+	}
+	
+	@Override
+	public double getArea() {
+		return Math.PI * this.radius * this.radius;
+	}
+}
+
+public class OverTest {
+
+	public static void main(String[] args) {
+
+		
+		Shape[] shape = {new Triangle(10,10), new Rectangle(10,10), new Circle(10)};
+		
+		double sumArea = 0;
+		
+		for(Shape s : shape) {
+			sumArea += s.getArea();
+		}
+		System.out.println(sumArea);
+	}
+}
