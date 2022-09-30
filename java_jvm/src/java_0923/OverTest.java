@@ -1,6 +1,6 @@
 package java_0923;
 
-class Shape{
+abstract class Shape{
 	protected int width;
 	protected int height;
 
@@ -17,9 +17,7 @@ class Shape{
 		System.out.println("도형입니다. ");
 	}
 	
-	public double getArea() {
-		return 0;
-	}
+	public abstract double getArea();
 }
 
 class Rectangle extends Shape{
@@ -73,7 +71,8 @@ public class OverTest {
 	
 	static public void print(Shape shape) {
 		if (shape instanceof Rectangle) {
-			System.out.println("실제 타입은 Rectangle 입니다");
+			System.out.println("실제 타입은 Rectangle 입니다"); //캐스팅 가능 여부를 물음
+			Rectangle rec = (Rectangle) shape;
 		}else if(shape instanceof Circle) {
 			System.out.println("실제 타입은 Circle 입니다");
 		}else {
